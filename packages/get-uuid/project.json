@@ -1,0 +1,26 @@
+{
+  "name": "get-uuid",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/get-uuid/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/get-uuid",
+        "main": "packages/get-uuid/src/index.ts",
+        "tsConfig": "packages/get-uuid/tsconfig.lib.json",
+        "assets": ["packages/get-uuid/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/get-uuid/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

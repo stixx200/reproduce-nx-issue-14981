@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@myorg/is-uuid": ["packages/is-uuid/src/index.ts"],
+      "@reproduce-nx-issue/get-uuid": ["packages/get-uuid/src/index.ts"],
+      "@reproduce-nx-issue/uses-uuid": ["packages/uses-uuid/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
